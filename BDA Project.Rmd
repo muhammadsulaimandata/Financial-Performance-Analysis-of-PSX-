@@ -1,0 +1,77 @@
+---
+title: "PSX Financial Statement Analysis (2005–2023)"
+author: "Sulaiman"
+date: "2026-07-22"
+output:
+  html_document: default
+  pdf_document: default
+---
+## 1. Introduction
+The Pakistan Stock Exchange (PSX) maintains financial information for companies operating
+in various non-financial sectors. This data provides an opportunity to examine how different sectors have performed over time. However, due to the large volume of financial records spanning multiple years, it is difficult to identify overall performance trends and determine which sectors and companies have demonstrated the strongest financial performance through simple observation.
+
+This project addresses this challenge by analyzing the financial performance of non-financial sectors listed on the Pakistan Stock Exchange (PSX) from 2005 to 2023. The analysis focuses on evaluating the overall performance of all non-financial sectors, identifying the top performing sector, and examining the leading companies within that sector based on selected financial indicators.
+
+To achieve these objectives, the project applies a complete data analytics workflow, including data cleaning, SQL-based data extraction, statistical analysis using R, and interactive visualization using Tableau. This approach transforms raw financial data into meaningful analytical results, enabling a clear understanding of sector performance over the study period.
+
+## 2 DATA COLLECTION
+
+### 2.1 Introduction
+Data collection is the systematic process of gathering, measuring, and recording information from various sources so it can later be analyzed and used for decision-making. This document describes the source, method, and structure of a real financial dataset collected from the State Bank of Pakistan (SBP), covering listed non-financial companies also registered on the stock market.
+
+### 2.2 Source and Method of Data Collection
+The dataset is obtained from SBP's official publication, "Financial Statements Analysis of AllListed Non-Financial Companies." This is secondary data: SBP does not generate new data
+itself, but compiles figures already reported by companies in their audited annual financial statements (a form of desk/documentary research), then standardizes and consolidates them sector-wise before publishing on its website.
+
+  * Publishing Authority: State Bank of Pakistan (SBP)
+  * Companies Covered: Listed non-financial companies, also listed on the Pakistan
+Stock Exchange
+  * Nature of Data: Secondary, compiled from audited annual reports
+  * Time Period: 2005 – 2023 (19 years)
+
+*Word*
+
+
+## 4.1 Statistical Analysis
+Following the extraction, cleaning, and preprocessing of the financial data through SQL, statistical analysis was performed to examine the relationships among the selected financial ratios for the fourteen sectors of the Pakistan Stock Exchange (PSX). Since the an objective of this study was to investigate the degree of association among the financial indicators, so correlation analysis was employed as the principal statistical technique. This analysis provides an overview of the strength and direction of the linear relationships between variables and serves as a preliminary step in understanding the interaction among profitability, liquidity, leverage, efficiency, and firm size measures before drawing further financial interpretations.
+
+## 4.2 Tools for Statistical Analysis:
+The correlation analysis was conducted using the R programming language within the RStudio integrated development environment (IDE). R was selected due to its extensive statistical capabilities, reproducibility, and efficient handling of financial datasets. The analysis involved computing Pearson's correlation coefficients among the selected financial ratios and visualizing the resulting correlation matrix using appropriate statistical packages. Given figure presents the R script used to generate the correlation matrix and perform the statistical analysis.
+
+## 4.3 Steps of Analysis
+Statistical Analysis was done in multiple steps, starting with loading dataset and packages for analysis.
+
+### 4.3.1 Loading Packages:
+```{r setup, message=FALSE, warning=FALSE}
+# Install packages if needed
+packages <- c("dplyr", "corrplot")
+
+new_packages <- packages[!(packages %in% installed.packages()[,"Package"])]
+
+if(length(new_packages) > 0){
+  install.packages(new_packages)
+}
+library(dplyr)
+library(corrplot)
+
+set.seed(123)
+```
+
+### 4.3.2 Loading data set
+```{r loading dataset}
+# Dataset already loaded in R
+df <- 'Clean data.xlsx'
+
+```
+### 4.3.4 Actual Code
+```{r, echo=FALSE, out.width="100%"}
+knitr::include_graphics("E:/BDA Project/Code.png")
+```
+
+## 4.4 Correlation Matrix and its interpretation:
+The correlation matrix reveals several noteworthy relationships among the selected financial ratios across the fourteen PSX sectors. Strong positive correlations are observed among Net Profit Margin, Gross Profit Margin, and Operating Margin, indicating that these variables consistently measure similar aspects of corporate profitability. Return on Assets (ROA) demonstrates moderate positive associations with profitability measures, whereas Return on Equity (ROE) exhibits relatively weak correlations, suggesting that it is influenced by additional factors such as financial leverage. Furthermore, leverage ratios, particularly the liabilities-to-assets ratio, display negative relationships with profitability indicators, implying that firms with higher debt levels generally tend to achieve lower profitability. Likewise, the Current Ratio and Quick Ratio are highly positively correlated, reflecting their similar role in assessing short-term liquidity.
+	
+```{r, echo=FALSE, out.width="100%"}
+knitr::include_graphics("E:/BDA Project/01_correlation_heatmap.png")
+```
+
