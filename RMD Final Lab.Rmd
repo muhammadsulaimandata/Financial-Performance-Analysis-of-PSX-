@@ -1,0 +1,9 @@
+---
+title: "Bright Mart Sales Analysis"
+author: "Sulaiman"
+date: "2026-08-12"
+output: html_document
+---
+
+## **Business Context**
+
