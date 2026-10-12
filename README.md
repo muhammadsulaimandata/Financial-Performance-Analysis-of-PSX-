@@ -54,3 +54,13 @@ The key statistical method used is correlation analysis, which helps identify ho
 ## Notes
 
 This project is an academic/data-analysis project centered on PSX financial statement evaluation and statistical comparison of firm performance. It is designed to explore how financial ratios behave across sectors and years rather than to provide a commercial dashboard or business intelligence product.
+
+## Dashboards Preview
+
+### Overview Dashboard
+
+![Dashboard](images/1.png)
+
+### Sector Wise Dashboard
+
+![Dashboard 2](images/2.png)
