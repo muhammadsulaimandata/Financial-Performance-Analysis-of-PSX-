@@ -19,7 +19,7 @@ The study focuses on financial indicators related to:
 - Companies: listed non-financial firms on PSX
 - Sectors: 14 sectors represented in the dataset
 - Data source: SBP financial statement data for listed non-financial companies
-- Treatment: the aggregated "All Sector" rows were excluded from firm-level analysis to avoid distortion
+- Solution: the aggregated "All Sector" rows were excluded from firm-level analysis to avoid distortion
 
 ## Methodology
 
@@ -29,7 +29,7 @@ The analysis workflow includes:
 3. Constructing financial ratio variables
 4. Winsorizing extreme outliers
 5. Performing correlation analysis and related statistical checks in R
-6. Visualizing results through correlation heatmaps and supporting reports
+6. Visualizing results through Tableau Dashboards and supporting reports
 
 ## Main analytical approach
 
