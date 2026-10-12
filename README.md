@@ -67,4 +67,4 @@ This project is an academic/data-analysis project centered on PSX financial stat
 
 ### Company Wise Dashboard
 
-![Dashboard 3](images/3.pnd)
+![Dashboard 3](images/3.png)
