@@ -51,9 +51,6 @@ The key statistical method used is correlation analysis, which helps identify ho
 - `RMD Final Lab.Rmd` — additional report / lab file
 - `BDA-Project.html` — rendered HTML output
 
-## Notes
-
-This project is an academic/data-analysis project centered on PSX financial statement evaluation and statistical comparison of firm performance. It is designed to explore how financial ratios behave across sectors and years rather than to provide a commercial dashboard or business intelligence product.
 
 ## Dashboards Preview
 
@@ -68,3 +65,8 @@ This project is an academic/data-analysis project centered on PSX financial stat
 ### Company Wise Dashboard
 
 ![Dashboard 3](images/3.png)
+
+
+## Notes
+
+This project is an academic/data-analysis project centered on PSX financial statement evaluation and statistical comparison of firm performance. It is designed to explore how financial ratios behave across sectors and years rather than to provide a commercial dashboard or business intelligence product.
