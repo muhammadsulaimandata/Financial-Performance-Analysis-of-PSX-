@@ -39,18 +39,18 @@ The key statistical method used is correlation analysis, which helps identify ho
 
 ## Tools used
 
+- Excel
+- SQL
 - R
 - RStudio
-- R packages: readxl, dplyr, corrplot, car, plm, factoextra, cluster, rpart, ggplot2
+- Tableau
 
 ## Repository contents
 
-- `PSX_Financial_Analysis.R` — main R analysis script
-- `01 Correlation Analysis.R` — correlation-focused analysis script
-- `BDA Project.Rmd` — project report in R Markdown
-- `RMD Final Lab.Rmd` — additional report / lab file
-- `BDA-Project.html` — rendered HTML output
-
+- `PSX_Financial_Report.docs` - main R analysis script
+- `Correlation Analysis.R` - correlation-focused analysis script
+- `BDA Project.Rmd` - project report in R Markdown
+- `Correlation_heatmap.R` - Heatmap of Correlation analysis
 
 ## Dashboards Preview
 
