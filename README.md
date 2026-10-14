@@ -54,7 +54,7 @@ The key statistical method used is correlation analysis, which helps identify ho
 
 ## Dashboard Link
 
-[View Dashboard]([https://your-dashboard-link.com](https://public.tableau.com/views/PSXDashboard/1OverallAnalysis?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+[View Dashboard](https://public.tableau.com/views/PSXDashboard/1OverallAnalysis?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ## Dashboards Preview
 
